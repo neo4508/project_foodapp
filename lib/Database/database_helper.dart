@@ -1,3 +1,4 @@
+import 'dart:indexed_db';
 import 'dart:io';
 import 'package:test2/models/user.dart';
 import 'package:path/path.dart';
@@ -9,7 +10,7 @@ class DatabaseHelper {
   static final DatabaseHelper _instance = new DatabaseHelper.internal();
   factory DatabaseHelper() => _instance;
 
-  static Database _db ;
+  static Database? _db;
   final String tableUser = "User";
   //final String columnName = "name";
   final String columnUserName = "username";

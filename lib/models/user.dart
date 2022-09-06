@@ -1,7 +1,7 @@
 class User {
   //String _name
-  String _username;
-  String _password;
+  String _username = '';
+  String _password = '';
   //String _flaglogged;
 
 
